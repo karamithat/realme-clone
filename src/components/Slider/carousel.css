@@ -1,0 +1,48 @@
+/* Carousel kapsayıcısı */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Her bir slayt */
+.carousel-slide {
+  width: 100%;
+}
+
+/* Resimler */
+.carousel-image {
+  width: 100%;
+  height: calc(100vh - 60px); /* Header yüksekliğini çıkarıyoruz */
+  object-fit: cover; /* Resmin kapsayıcıyı doldurmasını sağlar */
+}
+
+/* Dots (noktalar) için stil */
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Dots'un resmin altına olan mesafesi */
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+}
+
+/* Ok işaretleri için stil */
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  z-index: 1;
+  display: block !important;
+  opacity: 0.6 !important; /* Görünürlük */
+}
+
+.slick-prev {
+  left: 10px; /* Sol oka konum */
+}
+
+.slick-next {
+  right: 10px; /* Sağ oka konum */
+}
+
+/* Genel olarak yatay taşmayı engellemek için */
+body {
+  overflow-x: hidden;
+}

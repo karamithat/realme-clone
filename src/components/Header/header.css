@@ -1,0 +1,74 @@
+header {
+  background: white;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Önde görünmesini sağlamak için yüksek bir z-index değeri */
+  padding: 1rem 6.7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-left ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-left ul li {
+  list-style: none;
+  position: relative;
+}
+.nav-left ul li a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  top: 38px;
+  transition: width 0.6s ease-in-out;
+}
+
+.nav-left ul li a:hover::after {
+  width: 100%;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-right ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-right ul li {
+  list-style: none;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.nav-right ul li a:hover {
+  opacity: 0.7;
+}
